@@ -4,9 +4,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   border-bottom: 2px solid rgb(0, 0, 0);
+  min-height: 300px;
+  max-height: 400px;
 }
 .header h1 {
   background-color: rgba(25, 25, 25, 0.5);
+  font-size: 1.8rem;
 }
 .header h1 a {
   text-decoration: none;
@@ -16,7 +19,7 @@
 }
 
 .navbar {
-  background-color: rgba(71, 94, 112, 0.9);
+  background-color: rgba(77, 123, 158, 0.7);
   width: 100%;
   position: sticky;
   top: 0;
@@ -193,6 +196,11 @@
 @media screen and (max-width: 576px) {
   .img-container-servicios {
     flex-basis: 90%;
+  }
+}
+@media screen and (min-width: 568px) {
+  .header h1 {
+    font-size: 3.5rem;
   }
 }
 @media screen and (min-width: 768px) {

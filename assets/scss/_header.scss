@@ -4,8 +4,11 @@
     background-size:cover;
     background-repeat: no-repeat;
     border-bottom: 2px solid $black;
+    min-height: 300px;
+    max-height: 400px;
     h1 {
         background-color: rgb(25,25,25,0.5);
+        font-size: 1.8rem;
         a {
         text-decoration: none;
         font-family: 'Signika', sans-serif;
