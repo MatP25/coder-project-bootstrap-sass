@@ -1,0 +1,52 @@
+.carousel {
+    border-bottom: 2px solid $black;
+    border-top: 2px solid $black;
+}
+
+/* gallery container */
+.gallery-div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    margin: 5px 5px 10px 5px;
+    li {
+        height: 400px;
+        cursor: pointer;
+        flex: 1 1 auto;
+        position: relative;
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .img-overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(57, 57, 57, 0.502);
+            top: 0;
+            left: 0;
+            transform: scale(0);
+            transition: all 0.2s 0.1s ease-in-out;
+            color: $white;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &::after {
+        content: "";
+        flex-grow: 3;
+    }   
+}
+
+/* overlay on img hover*/
+.gallery-div li:hover .img-overlay {
+    transform: scale(1);
+    transition: 0.5s;
+}

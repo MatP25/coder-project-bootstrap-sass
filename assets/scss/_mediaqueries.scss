@@ -1,0 +1,28 @@
+@media screen and (max-width:576px) {
+    .img-container-servicios {
+        flex-basis: 90%;
+    }
+}
+@media screen and (min-width:768px) {
+    .header{
+        background-image: url(../imgs/backgrounds/header-bg-2-medium.webp)
+    }
+    .widget-container {
+        background-image: url(../imgs/backgrounds/background1-medium.webp);
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .header{
+        background-image: url(../imgs/backgrounds/header-bg-2-large.webp);
+    }
+    .widget-container {
+        background-image: url(../imgs/backgrounds/background1-large.webp);
+    }
+}
+
+@media screen and (min-width:1400px) {
+    .widget-container {
+        background-image: url(../imgs/backgrounds/background1-xlarge.webp);
+    }
+}

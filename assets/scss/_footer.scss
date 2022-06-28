@@ -1,0 +1,35 @@
+.footer {
+    background: rgb(111, 177, 221);
+    div ul li {
+        border: 1px solid rgb(30,30,30);
+        box-shadow: 2px 2px 0px 1px;
+        a {
+            text-decoration: none;
+            color: rgb(30,30,30);
+        }
+    }
+}
+
+.bi {
+    font-size: 32px;
+}
+
+.list-group-item {
+    transition: 0.1s;
+    &:hover {
+        transform: scale(1.1, 1.1);
+        text-shadow: 1px 1px 2px #353434;
+    }
+}
+
+.map-container {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    .map-iframe {
+        width: 100%;
+        height: fit-content;
+        padding: 5px;
+    }
+}

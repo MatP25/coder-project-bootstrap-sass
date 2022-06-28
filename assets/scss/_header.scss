@@ -1,16 +1,16 @@
 .header {
-    background-image:url(../assets/imgs/backgrounds/header-bg-2-small.jpg);
+    background-image:url(../imgs/backgrounds/header-bg-2-small.webp);
     background-position:center;
     background-size:cover;
     background-repeat: no-repeat;
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid $black;
     h1 {
         background-color: rgb(25,25,25,0.5);
         a {
         text-decoration: none;
         font-family: 'Signika', sans-serif;
-        color: azure;
-        text-shadow:  2px 2px 4px black;
+        color: $headerFontColor;
+        text-shadow:  2px 2px 4px $black;
         }
     }
 }
