@@ -215,6 +215,9 @@
   font-size: 1.05rem;
   font-weight: 700;
 }
+.navbar .nav-logo {
+  width: 50px;
+}
 
 .nav-link {
   font-weight: 600;
