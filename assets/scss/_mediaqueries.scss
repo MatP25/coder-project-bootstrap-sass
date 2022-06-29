@@ -1,4 +1,7 @@
-@media screen and (max-width:576px) {
+@media screen and (max-width:700px) {
+    .aside-img-container {
+        flex-direction: column;
+    }
     .img-container-servicios {
         flex-basis: 90%;
     }
