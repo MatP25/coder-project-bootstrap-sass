@@ -7,16 +7,15 @@
     border-bottom: 2px solid $black;
     border-left: 1px solid $black;
     border-right: 1px solid $black;
+    .active {
+        text-decoration: underline;
+        font-size: 1.05rem;
+        font-weight: 700;
+    }
     
 }
 
 .nav-link {
     font-weight: 600;
     color: $black;  
-}
-
-.active {
-    text-decoration: underline;
-    font-size: 1.05rem;
-    font-weight: 700;
 }

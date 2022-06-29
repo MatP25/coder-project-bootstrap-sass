@@ -209,16 +209,15 @@
   border-left: 1px solid rgb(0, 0, 0);
   border-right: 1px solid rgb(0, 0, 0);
 }
+.navbar .active {
+  text-decoration: underline;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
 
 .nav-link {
   font-weight: 600;
   color: rgb(0, 0, 0);
-}
-
-.active {
-  text-decoration: underline;
-  font-size: 1.05rem;
-  font-weight: 700;
 }
 
 .carousel {
