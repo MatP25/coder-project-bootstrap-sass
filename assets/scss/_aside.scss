@@ -29,18 +29,17 @@
             position: absolute;
             left: 0;
             width: 100%;
-            height: 50%;
+            height: 70%;
             background: rgba(30, 30, 30, 0.602);
             display: flex;
             align-items: center;
+            padding: 2%;
             h3 {
-                padding: 5px;
-                font-size: 1.4em;
+                font-size: 1.2rem;
             }
         }
     }
 }
-
 
 /* aside - imgs (servicios.html) */
 .img-container-nosotros {
@@ -66,8 +65,8 @@
         align-items: center;
         justify-content: center;
         h3 {
-            padding: 5px;
-            font-size: 1.2em;
+            padding: 1%;
+            font-size: 1rem;
         }
     }
 }
