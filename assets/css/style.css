@@ -365,13 +365,21 @@
   border-top: 2px solid rgb(0, 0, 0);
   background: rgb(111, 177, 221);
 }
-.footer div ul li {
+.footer div .icons-list li {
   border: 1px solid rgb(30, 30, 30);
   box-shadow: 2px 2px 0px 1px;
 }
-.footer div ul li a {
+.footer div .icons-list li a {
   text-decoration: none;
   color: rgb(30, 30, 30);
+}
+.footer div .contact-info-list {
+  list-style: none;
+  text-align: center;
+  font-weight: 500;
+}
+.footer div .contact-info-list .contact-info-item {
+  margin: 5px 0 0 0;
 }
 
 .bi {

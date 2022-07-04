@@ -1,12 +1,20 @@
 .footer {
     border-top: 2px solid $black;
     background: rgb(111, 177, 221);
-    div ul li {
+    div .icons-list li {
         border: 1px solid rgb(30,30,30);
         box-shadow: 2px 2px 0px 1px;
         a {
             text-decoration: none;
             color: rgb(30,30,30);
+        }
+    }
+    div .contact-info-list {
+        list-style: none;
+        text-align: center;
+        font-weight: 500;
+        .contact-info-item {
+            margin: 5px 0 0 0;
         }
     }
 }
