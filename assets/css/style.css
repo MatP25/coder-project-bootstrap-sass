@@ -344,9 +344,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1%;
 }
 .img-container-nosotros .img-overlay-nosotros h3 {
-  padding: 1%;
   font-size: 1rem;
 }
 
