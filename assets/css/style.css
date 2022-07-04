@@ -216,7 +216,7 @@
   font-weight: 700;
 }
 .navbar .nav-logo {
-  width: 50px;
+  width: 70px;
 }
 
 .nav-link {
@@ -362,6 +362,7 @@
 }
 
 .footer {
+  border-top: 2px solid rgb(0, 0, 0);
   background: rgb(111, 177, 221);
 }
 .footer div ul li {
@@ -389,7 +390,8 @@
   width: 100%;
   overflow: hidden;
   margin-bottom: 15px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border: 2px solid rgba(20, 20, 20, 0.5);
+  padding: 0;
 }
 .map-container .map-iframe {
   width: 100%;
