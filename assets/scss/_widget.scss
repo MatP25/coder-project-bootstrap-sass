@@ -1,8 +1,7 @@
 .widget-container {
+    background-color: $backup-bg;
     background-image: url(../imgs/backgrounds/background1-small.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    @extend .background-img-properties;
     .taggbox-container {
         max-height: 550px;
         padding: 2%;

@@ -1,6 +1,6 @@
 .footer {
-    border-top: 2px solid $black;
-    background: rgb(111, 177, 221);
+    border-top: $border-2;
+    background: $footer-background;
     div .icons-list li {
         border: 1px solid rgb(30,30,30);
         box-shadow: 2px 2px 0px 1px;
@@ -14,7 +14,7 @@
         text-align: center;
         font-weight: 500;
         .contact-info-item {
-            margin: 5px 0 0 0;
+            margin-top: 5px;
         }
     }
 }

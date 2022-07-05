@@ -1,15 +1,18 @@
 .navbar {
-    background-color: $navBackground;
+    background-color: $nav-background;
     width: 100%;
     position: sticky;
     top:0;
     z-index: 100;
-    border-bottom: 2px solid $black;
-    border-left: 1px solid $black;
-    border-right: 1px solid $black;
+    border-bottom: $border-2;
+    border-left: $border-1;
+    border-right: $border-1;
+    -webkit-box-shadow: $nav-shadow;
+    -moz-box-shadow: $nav-shadow;
+    box-shadow: $nav-shadow;
     .active {
-        border-top: 1px solid $black;
-        border-bottom: 2px solid $black;
+        border-top: $border-1;
+        border-bottom: $border-2;
         font-size: 1.05rem;
         font-weight: 700;
     }

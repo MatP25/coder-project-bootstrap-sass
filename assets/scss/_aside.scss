@@ -1,38 +1,25 @@
 /* imgs in servicios.html */
 .aside-img-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    @include flex-properties (flex,row,wrap,space-evenly,stretch);
     flex: 1 1 auto;
-    justify-content: space-evenly;
     gap: 15px;
     padding: 5px;
     margin: 5px;
     .img-container-servicios {
+        @include overlay-properties;
+        @include flex-properties (flex,row,nowrap,flex-start,center);
         height: 400px;
         max-width: 700px;
         flex-basis: 45%;
-        position: relative;
-        display: flex;
-        align-items: center;
         text-align: center;
-        color: $white;
         font-weight: 100;
         img {
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
             border-radius: 5px;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
-        .img-servicios-overlay {
-            position: absolute;
-            left: 0;
-            width: 100%;
+        .img-overlay {
+            @include flex-properties (flex,row,nowrap,flex-start,center);
             height: 70%;
-            background: rgba(30, 30, 30, 0.602);
-            display: flex;
-            align-items: center;
             padding: 2%;
             h3 {
                 font-size: 1.2rem;
@@ -43,27 +30,14 @@
 
 /* aside - imgs (servicios.html) */
 .img-container-nosotros {
+    @include overlay-properties;
+    @include flex-properties (flex,row,nowrap,flex-start,center);
     height: 400px;
-    position: relative;
-    display: flex;
-    align-items: center;
     text-align: center;
-    color: $white;
     font-weight: 100;
-    img {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-    }
-    .img-overlay-nosotros {
-        position: absolute;
-        left: 0;
-        width: 100%;
+    .img-overlay {
+        @include flex-properties (flex,row,nowrap,center,center);
         height: 30%;
-        background: rgba(30, 30, 30, 0.602);
-        display: flex;
-        align-items: center;
-        justify-content: center;
         padding: 1%;
         h3 {
             font-size: 1rem;

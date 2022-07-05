@@ -1,9 +1,8 @@
 .header {
+    background-color: $backup-bg;
     background-image:url(../imgs/backgrounds/header-bg-2-small.webp);
-    background-position:center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    border-bottom: 2px solid $black;
+    @extend .background-img-properties;
+    border-bottom: $border-2;
     min-height: 300px;
     max-height: 400px;
     h1 {
