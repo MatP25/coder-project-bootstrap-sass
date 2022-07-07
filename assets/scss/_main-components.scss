@@ -1,3 +1,27 @@
+
+/* carousel in index.html */
+.carousel-index {
+    border: none;
+    border-radius: 0;
+    &>div {
+        margin-top: 2%;
+    }
+}
+
+.carousel-img-index {
+    max-height: 500px;
+    min-width: auto;
+}
+
+/* cards in index.html */
+.index-card {
+    color: $white;
+    border-radius: 0;
+    &>img {
+        margin-top: 2%
+    }
+}
+
 /* imgs in servicios.html */
 .aside-img-container {
     @include flex-properties (flex,row,wrap,space-evenly,stretch);
@@ -18,7 +42,7 @@
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
         .img-overlay {
-            @include flex-properties (flex,row,nowrap,flex-start,center);
+            @include flex-properties (flex,row,nowrap,center,center);
             height: 70%;
             padding: 2%;
             h3 {
@@ -28,7 +52,16 @@
     }
 }
 
-/* aside - imgs (servicios.html) */
+/* service cards */
+.serv-card {
+    border: none;
+    background: rgba(193,228,238,1) ;
+    img {
+        margin: 10% 0;
+    }
+}
+
+/* imgs in acercade.html */
 .img-container-nosotros {
     @include overlay-properties;
     @include flex-properties (flex,row,nowrap,flex-start,center);
@@ -38,7 +71,7 @@
     .img-overlay {
         @include flex-properties (flex,row,nowrap,center,center);
         height: 30%;
-        padding: 1%;
+        padding: 5%;
         h3 {
             font-size: 1rem;
         }
