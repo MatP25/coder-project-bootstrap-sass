@@ -36,3 +36,9 @@
         background-image: url(../imgs/backgrounds/background1-xlarge.webp);
     }
 }
+
+@media (prefers-reduced-motion: reduce) {
+    .slide-in-top, .slide-in-left, .slide-in-right, .slide-in-blurred-bottom {
+        animation: none;
+    }
+}
