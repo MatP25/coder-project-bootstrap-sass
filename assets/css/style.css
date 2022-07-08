@@ -262,8 +262,8 @@
   height: 100%;
 }
 .gallery-div li img {
-  vertical-align: middle;
   border-radius: 10px;
+  vertical-align: middle;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .gallery-div li .img-overlay {
@@ -272,12 +272,12 @@
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
   height: 100%;
   background: rgba(57, 57, 57, 0.502);
   top: 0;
   transform: scale(0);
   transition: all 0.2s 0.1s ease-in-out;
-  border-radius: 10px;
 }
 .gallery-div::after {
   content: "";
@@ -306,11 +306,38 @@
 
 /* cards in index.html */
 .index-card {
-  color: rgb(255, 255, 255);
-  border-radius: 0;
+  border: none;
+  background-color: rgb(7, 13, 46);
+  position: relative;
+  z-index: 90;
+  border-radius: 100%;
 }
 .index-card > img {
   margin-top: 2%;
+  z-index: 50;
+  border-radius: 50px;
+}
+.index-card p {
+  color: rgb(255, 255, 255);
+  position: relative;
+  padding: 5%;
+  z-index: 60;
+  font-size: 1.2em;
+}
+.index-card .decorative-bot, .index-card .decorative-top {
+  border-radius: 0 100px 0 100px;
+  min-width: 110%;
+  min-height: 47%;
+  background-color: rgb(33, 37, 41);
+  position: absolute;
+  left: -6%;
+  bottom: 0;
+  z-index: 10;
+}
+.index-card .decorative-top {
+  top: -2%;
+  bottom: initial;
+  border-radius: 0 100px 0 100px;
 }
 
 /* imgs in servicios.html */

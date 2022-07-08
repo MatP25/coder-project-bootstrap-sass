@@ -15,12 +15,41 @@
 
 /* cards in index.html */
 .index-card {
-    color: $white;
-    border-radius: 0;
+    border: none;
+    background-color: $dark-blue;
+    position: relative;
+    z-index: 90;
+    @include border-rad(100%);
     &>img {
-        margin-top: 2%
+        margin-top: 2%;
+        z-index: 50;
+        @include border-rad(50px);
     }
-}
+    p {
+        color: $white;
+        position: relative;
+        padding: 5%;
+        z-index: 60;
+        font-size: 1.2em;
+    }
+    .decorative-bot {
+        @include border-rad(0 100px 0 100px);
+        min-width: 110%;
+        min-height: 47%;
+        background-color: $dark;
+        position: absolute;
+        left: -6%;
+        bottom: 0;
+        z-index: 10;
+    }
+    .decorative-top {
+        @extend .decorative-bot;
+            top: -2%;
+            bottom: initial;
+            @include border-rad(0 100px 0 100px);
+        }
+    }
+
 
 /* imgs in servicios.html */
 .aside-img-container {
