@@ -1,5 +1,5 @@
 .widget-container {
-    background-color: $backup-bg;
+    background-color: map-get($background-colors, backup);
     background-image: url(../imgs/backgrounds/background1-small.webp);
     @extend .background-img-properties;
     .taggbox-container {

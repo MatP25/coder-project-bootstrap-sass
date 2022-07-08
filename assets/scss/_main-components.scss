@@ -16,7 +16,7 @@
 /* cards in index.html */
 .index-card {
     border: none;
-    background-color: $dark-blue;
+    background-color: map-get($colors,dark-blue);
     position: relative;
     z-index: 90;
     @include border-rad(100%);
@@ -34,10 +34,10 @@
         font-weight: 500;
     }
     .decorative-bot {
-        @include border-rad(0 100px 0 100px);
+        @include border-rad(100px 0 25px 0);
         min-width: 110%;
         min-height: 47%;
-        background-color: $dark;
+        background-color: map-get($colors, dark);
         position: absolute;
         left: -6%;
         bottom: 0;
@@ -47,7 +47,7 @@
         @extend .decorative-bot;
             top: -2%;
             bottom: initial;
-            @include border-rad(0 100px 0 100px);
+            @include border-rad(25px 0 100px 0);
         }
     }
 
@@ -68,7 +68,7 @@
         text-align: center;
         font-weight: 100;
         img {
-            border-radius: 5px;
+            @include border-rad(5px);
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
         .img-overlay {
@@ -85,7 +85,7 @@
 /* service cards */
 .serv-card {
     border: none;
-    background: rgba(193,228,238,1) ;
+    background: map-get($background-colors, serv-card) ;
     img {
         margin: 10% 0;
     }

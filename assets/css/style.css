@@ -188,7 +188,7 @@
   max-height: 400px;
 }
 .header h1 {
-  background-color: rgba(25, 25, 25, 0.5);
+  background-color: rgba(25, 25, 25, 0.6);
   font-size: 1.8rem;
 }
 .header h1 a {
@@ -254,7 +254,7 @@
   position: absolute;
   left: 0;
   width: 100%;
-  background: rgba(30, 30, 30, 0.602);
+  background: rgba(30, 30, 30, 0.802);
 }
 .gallery-div li img {
   object-fit: cover;
@@ -334,9 +334,9 @@
   font-weight: 500;
 }
 .index-card .decorative-bot, .index-card .decorative-top {
-  border-radius: 0 100px 0 100px;
-  -webkit-border-radius: 0 100px 0 100px;
-  -moz-border-radius: 0 100px 0 100px;
+  border-radius: 100px 0 25px 0;
+  -webkit-border-radius: 100px 0 25px 0;
+  -moz-border-radius: 100px 0 25px 0;
   min-width: 110%;
   min-height: 47%;
   background-color: rgb(33, 37, 41);
@@ -348,9 +348,9 @@
 .index-card .decorative-top {
   top: -2%;
   bottom: initial;
-  border-radius: 0 100px 0 100px;
-  -webkit-border-radius: 0 100px 0 100px;
-  -moz-border-radius: 0 100px 0 100px;
+  border-radius: 25px 0 100px 0;
+  -webkit-border-radius: 25px 0 100px 0;
+  -moz-border-radius: 25px 0 100px 0;
 }
 
 /* imgs in servicios.html */
@@ -383,7 +383,7 @@
   position: absolute;
   left: 0;
   width: 100%;
-  background: rgba(30, 30, 30, 0.602);
+  background: rgba(30, 30, 30, 0.802);
 }
 .aside-img-container .img-container-servicios img {
   object-fit: cover;
@@ -392,6 +392,8 @@
 }
 .aside-img-container .img-container-servicios img {
   border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .aside-img-container .img-container-servicios .img-overlay {
@@ -433,7 +435,7 @@
   position: absolute;
   left: 0;
   width: 100%;
-  background: rgba(30, 30, 30, 0.602);
+  background: rgba(30, 30, 30, 0.802);
 }
 .img-container-nosotros img {
   object-fit: cover;
@@ -479,12 +481,12 @@
   background: rgb(111, 161, 199);
 }
 .footer div .icons-list li {
-  border: 1px solid rgb(30, 30, 30);
+  border: 1px solid rgb(33, 37, 41);
   box-shadow: 2px 2px 0px 1px;
 }
 .footer div .icons-list li a {
   text-decoration: none;
-  color: rgb(30, 30, 30);
+  color: rgb(33, 37, 41);
 }
 .footer div .contact-info-list {
   list-style: none;

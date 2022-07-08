@@ -1,17 +1,17 @@
 .header {
-    background-color: $backup-bg;
+    background-color: map-get($background-colors, backup);
     background-image:url(../imgs/backgrounds/header-bg-2-small.webp);
     @extend .background-img-properties;
     border-bottom: $border-2;
     min-height: 300px;
     max-height: 400px;
     h1 {
-        background-color: rgb(25,25,25,0.5);
+        background-color: map-get($background-colors, dark-overlay-header);
         font-size: 1.8rem;
         a {
         text-decoration: none;
-        font-family: 'Signika', sans-serif;
-        color: $headerFontColor;
+        font-family: $header-font;
+        color: map-get($colors, header-font-color);
         text-shadow:  2px 2px 4px $black;
         }
     }

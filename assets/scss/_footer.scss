@@ -1,12 +1,12 @@
 .footer {
     border-top: $border-2;
-    background: $footer-background;
+    background: map-get($background-colors, footer);
     div .icons-list li {
-        border: 1px solid rgb(30,30,30);
+        border: $border-1-dark;
         box-shadow: 2px 2px 0px 1px;
         a {
             text-decoration: none;
-            color: rgb(30,30,30);
+            color: map-get($colors,dark);
         }
     }
     div .contact-info-list {
