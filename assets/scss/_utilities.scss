@@ -1,17 +1,17 @@
 
-$black: rgba(0,0,0);
-$dark: rgba(33,37,41);
+$black: rgb(0,0,0);
+$dark: rgb(33,37,41);
 $white: rgb(255, 255, 255);
 // background colors
 $dark-overlay-img: rgba(30,30,30,0.802);
-$dark-overlay-header: rgb(25,25,25,0.6);
+$dark-overlay-header: rgba(25,25,25,0.6);
 $serv-card-bg: rgba(193,228,238,1);
 $backup-bg: rgba(113, 151, 180, 0.8);
 $nav-bg: rgba(77, 123, 158, 0.9);
-$footer-bg: rgba(111, 161, 199);
-$dark-blue: rgb(7 13 46);
+$footer-bg: rgba(111, 161, 199, 1);
+$dark-blue: rgb(7, 13, 46);
 // font
-$header-font-color: rgba(240,255,255);
+$header-font-color: rgba(235,255,255,1);
 $header-font: 'Signika', sans-serif;
 // border
 $border-1: 1px solid $black;
