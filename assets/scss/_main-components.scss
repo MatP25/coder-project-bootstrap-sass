@@ -115,3 +115,23 @@
         max-width: 75ch;
     }
 }
+
+/* buttons in form */
+.btn-send {
+    color: $white;
+    background: map-get($colors, dark-blue);
+    padding: 8px 20px;
+    margin: 1%;
+    &:hover, &:focus{
+        color: $white;
+        background: map-get($colors, light-blue);
+        border: $border-2;
+        transform: scale(1.02);
+        transition: 0.2s;
+    }
+}
+
+.btn-delete {
+    @extend .btn-send;
+    background: map-get($colors, dark);
+}

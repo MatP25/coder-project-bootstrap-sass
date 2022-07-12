@@ -411,6 +411,23 @@
   .section-text p {
     max-width: 75ch; }
 
+/* buttons in form */
+.btn-send, .btn-delete {
+  color: white;
+  background: #070d2e;
+  padding: 8px 20px;
+  margin: 1%; }
+  .btn-send:hover, .btn-delete:hover, .btn-send:focus, .btn-delete:focus {
+    color: white;
+    background: #1f457e;
+    border: 2px solid black;
+    transform: scale(1.02);
+    transition: 0.2s; }
+
+.btn-delete {
+  background: #212529; }
+
+/* google review widget */
 .widget-container {
   background-color: rgba(113, 151, 180, 0.8);
   background-image: url(../imgs/backgrounds/background1-small.webp); }
