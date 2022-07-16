@@ -16,14 +16,14 @@
 /* cards in index.html */
 .index-card {
     border: none;
-    background-color: map-get($colors,dark-blue);
+    background-color: map-get($colors,dark);
     position: relative;
     z-index: 90;
-    @include border-rad(100%);
+    // @include border-rad(100%);
     &>img {
         margin-top: 2%;
         z-index: 50;
-        @include border-rad(50px);
+        @include border-rad(5px);
     }
     p {
         color: $white;
@@ -34,20 +34,19 @@
         font-weight: 500;
     }
     .decorative-bot {
-        @include border-rad(100px 0 50px 0);
-        min-width: 110%;
-        min-height: 47%;
-        background-color: map-get($colors, dark);
+        min-width: 100%;
+        min-height: 50%;
+        background-color: map-get($colors, dark-blue);
         position: absolute;
-        left: -6%;
+        left: 0;
         bottom: 0;
         z-index: 10;
     }
     .decorative-top {
         @extend .decorative-bot;
-            top: -2%;
-            bottom: initial;
-            @include border-rad(50px 0 100px 0);
+            top: 0;
+            min-width: 0%;
+            max-height: 50%;
         }
     }
 

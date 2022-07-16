@@ -276,18 +276,15 @@
 /* cards in index.html */
 .index-card {
   border: none;
-  background-color: #070d2e;
+  background-color: #212529;
   position: relative;
-  z-index: 90;
-  border-radius: 100%;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%; }
+  z-index: 90; }
   .index-card > img {
     margin-top: 2%;
     z-index: 50;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px; }
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px; }
   .index-card p {
     color: white;
     position: relative;
@@ -296,22 +293,17 @@
     font-size: 1.2em;
     font-weight: 500; }
   .index-card .decorative-bot, .index-card .decorative-top {
-    border-radius: 100px 0 50px 0;
-    -webkit-border-radius: 100px 0 50px 0;
-    -moz-border-radius: 100px 0 50px 0;
-    min-width: 110%;
-    min-height: 47%;
-    background-color: #212529;
+    min-width: 100%;
+    min-height: 50%;
+    background-color: #070d2e;
     position: absolute;
-    left: -6%;
+    left: 0;
     bottom: 0;
     z-index: 10; }
   .index-card .decorative-top {
-    top: -2%;
-    bottom: initial;
-    border-radius: 50px 0 100px 0;
-    -webkit-border-radius: 50px 0 100px 0;
-    -moz-border-radius: 50px 0 100px 0; }
+    top: 0;
+    min-width: 0%;
+    max-height: 50%; }
 
 /* imgs in servicios.html */
 .aside-img-container {
