@@ -66,6 +66,7 @@
         flex-basis: 45%;
         text-align: center;
         font-weight: 100;
+        overflow-x: hidden;
         img {
             @include border-rad(5px);
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;

@@ -328,7 +328,8 @@
     max-width: 700px;
     flex-basis: 45%;
     text-align: center;
-    font-weight: 100; }
+    font-weight: 100;
+    overflow-x: hidden; }
     .aside-img-container .img-container-servicios .img-overlay {
       position: absolute;
       left: 0;
