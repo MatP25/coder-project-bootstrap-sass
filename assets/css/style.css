@@ -159,6 +159,27 @@
     filter: blur(0);
     opacity: 1; } }
 
+@keyframes img-blur {
+  from {
+    -webkit-filter: grayscale(90%) blur(2px);
+    filter: grayscale(90%) blur(2px); }
+  to {
+    -webkit-filter: grayscale(0%) blur(0px);
+    filter: grayscale(0%) blur(0px); } }
+
+.img-blur, .index-card:hover img, .index-card:focus img {
+  -webkit-animation: img-blur 1s linear 0s;
+  -webkit-animation-fill-mode: forwards;
+  animation: img-blur 1s linear 0s;
+  animation-fill-mode: forwards; }
+
+.card-transform, .index-card:hover, .index-card:focus {
+  box-shadow: #26394d 0px 20px 30px -10px;
+  -webkit-transform: scale(1.02, 1.02);
+  -webkit-transition: 350ms;
+  transform: scale(1.02, 1.02);
+  transition: 350ms; }
+
 .header {
   background-color: rgba(113, 151, 180, 0.8);
   background-image: url(../imgs/backgrounds/header-bg-2-small.webp);
@@ -279,13 +300,19 @@
   border: none;
   background-color: #212529;
   position: relative;
-  z-index: 90; }
+  z-index: 90;
+  will-change: transform;
+  transition: transform 500ms;
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%; }
   .index-card > img {
     margin-top: 2%;
     z-index: 50;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px; }
+    filter: grayscale(95%) blur(2px);
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%; }
   .index-card p {
     color: white;
     position: relative;
@@ -293,18 +320,6 @@
     z-index: 60;
     font-size: 1.2em;
     font-weight: 500; }
-  .index-card .decorative-bot, .index-card .decorative-top {
-    min-width: 100%;
-    min-height: 50%;
-    background-color: #070d2e;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 10; }
-  .index-card .decorative-top {
-    top: 0;
-    min-width: 0%;
-    max-height: 50%; }
 
 /* imgs in servicios.html */
 .aside-img-container {

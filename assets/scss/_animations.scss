@@ -184,3 +184,30 @@
         opacity: 1;
     }
 }
+
+//index card animations
+@keyframes img-blur {
+    from {
+        -webkit-filter: grayscale(90%) blur(2px);
+        filter: grayscale(90%) blur(2px);
+    }
+    to {
+        -webkit-filter: grayscale(0%) blur(0px);
+        filter: grayscale(0%) blur(0px);
+    }
+}
+
+.img-blur {
+    -webkit-animation: img-blur 1s linear 0s;
+    -webkit-animation-fill-mode: forwards;
+    animation: img-blur 1s linear 0s;
+    animation-fill-mode: forwards;
+}
+
+.card-transform {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    -webkit-transform: scale(1.02 , 1.02);
+    -webkit-transition: 350ms;
+    transform: scale(1.02 , 1.02);
+    transition: 350ms;
+}

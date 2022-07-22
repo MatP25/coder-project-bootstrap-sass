@@ -19,11 +19,20 @@
     background-color: map-get($colors,dark);
     position: relative;
     z-index: 90;
-    // @include border-rad(100%);
+    will-change: transform;
+    transition: transform 500ms;
+    @include border-rad(5%);
+    &:hover, &:focus {
+        @extend .card-transform;
+    }
+    &:hover img , &:focus img {
+        @extend .img-blur;
+    }
     &>img {
         margin-top: 2%;
         z-index: 50;
-        @include border-rad(5px);
+        filter: grayscale(95%) blur(2px);
+        @include border-rad(5%);
     }
     p {
         color: $white;
@@ -33,22 +42,7 @@
         font-size: 1.2em;
         font-weight: 500;
     }
-    .decorative-bot {
-        min-width: 100%;
-        min-height: 50%;
-        background-color: map-get($colors, dark-blue);
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        z-index: 10;
-    }
-    .decorative-top {
-        @extend .decorative-bot;
-            top: 0;
-            min-width: 0%;
-            max-height: 50%;
-        }
-    }
+}
 
 
 /* imgs in servicios.html */
