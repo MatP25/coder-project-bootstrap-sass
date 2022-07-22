@@ -1,27 +1,27 @@
-.navbar {
-    background-color: map-get($background-colors, nav);
-    width: 100%;
+.nav-parent {
     position: sticky;
-    top:0;
+    top: 0;
     z-index: 100;
-    border-bottom: $border-2;
-    border-left: $border-1;
-    border-right: $border-1;
-    -webkit-box-shadow: $nav-shadow;
-    -moz-box-shadow: $nav-shadow;
-    box-shadow: $nav-shadow;
-    .active {
-        border-top: $border-1;
+    .navbar {
+        background-color: map-get($background-colors, nav);
+        width: 100%;
         border-bottom: $border-2;
-        font-size: 1.05rem;
-        font-weight: 700;
+        border-left: $border-1;
+        border-right: $border-1;
+        -webkit-box-shadow: $nav-shadow;
+        -moz-box-shadow: $nav-shadow;
+        box-shadow: $nav-shadow;
+        .active {
+            border-top: $border-1;
+            border-bottom: $border-2;
+            font-size: 1.05rem;
+            font-weight: 700;
+        }
+        .nav-logo {
+            width: 70px;
+        }
     }
-    .nav-logo {
-        width: 70px;
-    }
-    
 }
-
 .nav-link {
     font-weight: 600;
     color: $black;  
