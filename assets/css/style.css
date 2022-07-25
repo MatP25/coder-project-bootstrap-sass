@@ -469,6 +469,10 @@
     transform: scale(1.1, 1.1);
     text-shadow: 1px 1px 2px #353434; }
 
+.hours {
+  list-style: none;
+  text-align: center; }
+
 .map-container {
   width: 100%;
   overflow: hidden;
