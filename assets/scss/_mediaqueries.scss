@@ -18,7 +18,7 @@
     .header{
         background-image: url(../imgs/backgrounds/header-bg-2-medium.webp)
     }
-    .widget-container {
+    .reviews {
         background-image: url(../imgs/backgrounds/background1-medium.webp);
     }
 }
@@ -27,13 +27,13 @@
     .header{
         background-image: url(../imgs/backgrounds/header-bg-2-large.webp);
     }
-    .widget-container {
+    .reviews {
         background-image: url(../imgs/backgrounds/background1-large.webp);
     }
 }
 
 @media screen and (min-width:1400px) {
-    .widget-container {
+    .reviews {
         background-image: url(../imgs/backgrounds/background1-xlarge.webp);
     }
 }

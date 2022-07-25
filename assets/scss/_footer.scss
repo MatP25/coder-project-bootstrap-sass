@@ -1,39 +1,41 @@
 .footer {
     border-top: $border-2;
     background: map-get($background-colors, footer);
-    div .icons-list li {
-        border: $border-1-dark;
-        box-shadow: 2px 2px 0px 1px;
-        a {
-            text-decoration: none;
-            color: map-get($colors,dark);
+    .icons-list {
+        list-style: none;
+        @include flex-properties(flex,row,nowrap,space-evenly,center);
+        .contact-link {
+            transition: 0.1s;
+                &:hover, &:focus {
+                    transform: scale(1.15, 1.15);
+                    text-shadow: 1px 1px 2px #353434;
+                    }
+            a {
+                text-decoration: none;
+                color: map-get($colors,dark);
+                .bi {
+                    font-size: 40px;
+                }
+            }
         }
     }
-    div .contact-info-list {
+    .contact-info-list {
         list-style: none;
         text-align: center;
         font-weight: 500;
         .contact-info-item {
             margin-top: 5px;
+            font-size: 1.2em;
         }
-    }
-}
-
-.bi {
-    font-size: 32px;
-}
-
-.list-group-item {
-    transition: 0.1s;
-    &:hover {
-        transform: scale(1.1, 1.1);
-        text-shadow: 1px 1px 2px #353434;
     }
 }
 
 .hours {
     list-style: none;
     text-align: center;
+    li {
+        font-size: 1.2em;
+    }
 }
 
 .map-container {
@@ -48,4 +50,8 @@
         padding: 1%;
         
     }
+}
+
+#footer-contactos {
+    margin-top: 25rem;
 }

@@ -1,0 +1,40 @@
+.reviews {
+    margin: 1% 0;
+    padding: 1.5%;
+    background-color: map-get($background-colors, backup);
+    background-image: url(../imgs/backgrounds/background1-small.webp);
+    @extend .background-img-properties;
+    .review-card {
+        background-color:$serv-card-bg;
+        padding: 1.2%;
+        margin: 3%;
+        max-width: 400px;
+        height: fit-content;
+        box-shadow: -5px 4px 10px -5px;
+        @include border-rad(4px)
+        .review-name {
+            font-size: 1.1em;
+            &::before {
+                content: "\2605 \2605 \2605 \2605 \2605";
+            }
+        }
+        .review-container {
+            border: 1px solid $dark-blue;
+            @include border-rad(4px);
+            padding: 4px;
+            min-height: 164px;
+            .review {
+                font-size: 1.15em;
+                font-weight: 500;
+                word-wrap: break-word;
+                -ms-word-wrap: break-word;
+                &::before {
+                    content: open-quote;
+                }
+                &::after {
+                    content: close-quote;
+                }
+            }
+        }
+    }
+}

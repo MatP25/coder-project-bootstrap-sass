@@ -1,4 +1,4 @@
-.background-img-properties, .header, .widget-container {
+.background-img-properties, .header, .reviews {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
@@ -200,7 +200,7 @@
   top: 0;
   z-index: 100; }
   .nav-parent .navbar {
-    background-color: rgba(77, 123, 158, 0.9);
+    background-color: rgba(77, 123, 158, 0.97);
     width: 100%;
     border-bottom: 2px solid black;
     border-left: 1px solid black;
@@ -374,7 +374,7 @@
 /* service cards */
 .serv-card {
   border: none;
-  background: #c1e4ee; }
+  background: #6ec0d6; }
   .serv-card img {
     margin: 10% 0; }
 
@@ -436,42 +436,88 @@
 .btn-delete {
   background: #212529; }
 
-/* google review widget */
-.widget-container {
+.ver-mas-link {
+  text-decoration: none;
+  padding: 10px; }
+  .ver-mas-link .ver-mas {
+    display: block;
+    width: 100%;
+    background-color: #6ec0d6;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #070d2e;
+    padding: 10px 0; }
+
+.reviews {
+  margin: 1% 0;
+  padding: 1.5%;
   background-color: rgba(113, 151, 180, 0.8);
   background-image: url(../imgs/backgrounds/background1-small.webp); }
-  .widget-container .taggbox-container {
-    max-height: 550px;
-    padding: 2%; }
+  .reviews .review-card {
+    background-color: #6ec0d6;
+    padding: 1.2%;
+    margin: 3%;
+    max-width: 400px;
+    height: fit-content;
+    box-shadow: -5px 4px 10px -5px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px; }
+    .reviews .review-card .review-name {
+      font-size: 1.1em; }
+      .reviews .review-card .review-name::before {
+        content: "\2605 \2605 \2605 \2605 \2605"; }
+    .reviews .review-card .review-container {
+      border: 1px solid #070d2e;
+      border-radius: 4px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      padding: 4px;
+      min-height: 164px; }
+      .reviews .review-card .review-container .review {
+        font-size: 1.15em;
+        font-weight: 500;
+        word-wrap: break-word;
+        -ms-word-wrap: break-word; }
+        .reviews .review-card .review-container .review::before {
+          content: open-quote; }
+        .reviews .review-card .review-container .review::after {
+          content: close-quote; }
 
 .footer {
   border-top: 2px solid black;
   background: #6fa1c7; }
-  .footer div .icons-list li {
-    border: 1px solid #212529;
-    box-shadow: 2px 2px 0px 1px; }
-    .footer div .icons-list li a {
-      text-decoration: none;
-      color: #212529; }
-  .footer div .contact-info-list {
+  .footer .icons-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center; }
+    .footer .icons-list .contact-link {
+      transition: 0.1s; }
+      .footer .icons-list .contact-link:hover, .footer .icons-list .contact-link:focus {
+        transform: scale(1.15, 1.15);
+        text-shadow: 1px 1px 2px #353434; }
+      .footer .icons-list .contact-link a {
+        text-decoration: none;
+        color: #212529; }
+        .footer .icons-list .contact-link a .bi {
+          font-size: 40px; }
+  .footer .contact-info-list {
     list-style: none;
     text-align: center;
     font-weight: 500; }
-    .footer div .contact-info-list .contact-info-item {
-      margin-top: 5px; }
-
-.bi {
-  font-size: 32px; }
-
-.list-group-item {
-  transition: 0.1s; }
-  .list-group-item:hover {
-    transform: scale(1.1, 1.1);
-    text-shadow: 1px 1px 2px #353434; }
+    .footer .contact-info-list .contact-info-item {
+      margin-top: 5px;
+      font-size: 1.2em; }
 
 .hours {
   list-style: none;
   text-align: center; }
+  .hours li {
+    font-size: 1.2em; }
 
 .map-container {
   width: 100%;
@@ -483,6 +529,9 @@
     width: 100%;
     height: fit-content;
     padding: 1%; }
+
+#footer-contactos {
+  margin-top: 25rem; }
 
 @media screen and (min-width: 568px) {
   .header h1 {
@@ -497,17 +546,17 @@
 @media screen and (min-width: 768px) {
   .header {
     background-image: url(../imgs/backgrounds/header-bg-2-medium.webp); }
-  .widget-container {
+  .reviews {
     background-image: url(../imgs/backgrounds/background1-medium.webp); } }
 
 @media screen and (min-width: 1200px) {
   .header {
     background-image: url(../imgs/backgrounds/header-bg-2-large.webp); }
-  .widget-container {
+  .reviews {
     background-image: url(../imgs/backgrounds/background1-large.webp); } }
 
 @media screen and (min-width: 1400px) {
-  .widget-container {
+  .reviews {
     background-image: url(../imgs/backgrounds/background1-xlarge.webp); } }
 
 @media (prefers-reduced-motion: reduce) {
