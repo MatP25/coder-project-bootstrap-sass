@@ -145,4 +145,5 @@
     font-weight: 700;
     color:  map-get($palette, dark);
     @extend .link-underline-animation;
+    transition: 500ms;
 }

@@ -1,1 +1,18 @@
-$header-font: 'Signika', sans-serif;
+$header-font: 'Righteous', sans-serif;
+$title-font: 'Open Sans', sans-serif;
+$links-font: 'Noto Sans', sans-serif;
+$text-font: 'Source Sans Pro', sans-serif;
+// font color
+$header-font-color: rgba(235,255,255,1);
+
+h2, h3, h4, h5, h6 {
+    font-family: $title-font;
+}
+
+p, span {
+    font-family: $text-font;
+}
+
+a, button, input {
+    font-family: $links-font;
+}

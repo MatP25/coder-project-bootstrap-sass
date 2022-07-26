@@ -4,7 +4,7 @@
     background-color: map-get($palette, $secondary-light);
     background-image: url(../imgs/backgrounds/background1-small.webp);
     color: map-get($palette, dark);
-    @extend .background-img-properties;
+    @include background-img-properties;
     .review-card {
         background-color: map-get($palette, bg-primary);
         padding: 1.2%;

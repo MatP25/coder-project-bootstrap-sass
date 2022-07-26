@@ -1,7 +1,7 @@
 .header {
     background-color: map-get($palette, secondary-dark);
     background-image:url(../imgs/backgrounds/header-bg-2-small.webp);
-    @extend .background-img-properties;
+    @include background-img-properties;
     border-bottom: $border-2;
     min-height: 300px;
     max-height: 400px;
