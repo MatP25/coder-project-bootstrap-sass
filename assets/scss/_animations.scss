@@ -215,13 +215,13 @@
 .link-underline-animation {
     transition: 200ms; 
     background: linear-gradient($primary-dark, $primary-dark); 
-    background-size: 0% 0.15em;
+    background-size: 0% 0.20em;
     background-position-x: 0%;
     background-position-y: 100%;
     background-repeat: no-repeat;
     transition: background-size 0.2s ease-in-out;
     &:hover, &:focus, &:active {
-        background-size: 100% 0.15em;
+        background-size: 100% 0.20em;
         color: inherit;
     }
 }

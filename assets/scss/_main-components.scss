@@ -22,10 +22,12 @@
     position: relative;
     z-index: 90;
     will-change: transform;
-    transition: transform 500ms;
+    transition: 500ms;
     @include border-rad(5%);
     &:hover, &:focus {
         @extend .card-transform;
+        background-color: $primary-dark;
+        border: $border-1-dark;
     }
     &:hover img , &:focus img {
         @extend .img-blur;

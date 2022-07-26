@@ -12,8 +12,12 @@
         -moz-box-shadow: $nav-shadow;
         box-shadow: $nav-shadow;
         .active {
-            font-size: 1.05rem;
-            font-weight: 800;
+            &::after {
+                content: "<";
+            }
+            &::before {
+                content: ">";
+            }
         }
         .nav-logo {
             width: 70px;

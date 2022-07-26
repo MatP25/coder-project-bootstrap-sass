@@ -187,13 +187,13 @@ a, button, input {
 .link-underline-animation, .nav-link, .ver-mas-link {
   transition: 200ms;
   background: linear-gradient(#133C55, #133C55);
-  background-size: 0% 0.15em;
+  background-size: 0% 0.20em;
   background-position-x: 0%;
   background-position-y: 100%;
   background-repeat: no-repeat;
   transition: background-size 0.2s ease-in-out; }
   .link-underline-animation:hover, .nav-link:hover, .ver-mas-link:hover, .link-underline-animation:focus, .nav-link:focus, .ver-mas-link:focus, .link-underline-animation:active, .nav-link:active, .ver-mas-link:active {
-    background-size: 100% 0.15em;
+    background-size: 100% 0.20em;
     color: inherit; }
 
 .header {
@@ -227,9 +227,10 @@ a, button, input {
     -webkit-box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.63);
     -moz-box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.63);
     box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.63); }
-    .nav-parent .navbar .active {
-      font-size: 1.05rem;
-      font-weight: 800; }
+    .nav-parent .navbar .active::after {
+      content: "<"; }
+    .nav-parent .navbar .active::before {
+      content: ">"; }
     .nav-parent .navbar .nav-logo {
       width: 70px; }
 
@@ -316,10 +317,13 @@ a, button, input {
   position: relative;
   z-index: 90;
   will-change: transform;
-  transition: transform 500ms;
+  transition: 500ms;
   border-radius: 5%;
   -webkit-border-radius: 5%;
   -moz-border-radius: 5%; }
+  .index-card:hover, .index-card:focus {
+    background-color: #133C55;
+    border: 1px solid #21201e; }
   .index-card > img {
     margin-top: 2%;
     z-index: 50;
