@@ -211,3 +211,17 @@
     transform: scale(1.02 , 1.02);
     transition: 300ms;
 }
+
+.link-underline-animation {
+    transition: 200ms; 
+    background: linear-gradient($primary-dark, $primary-dark); 
+    background-size: 0% 0.15em;
+    background-position-x: 0%;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.2s ease-in-out;
+    &:hover, &:focus, &:active {
+        background-size: 100% 0.15em;
+        color: inherit;
+    }
+}

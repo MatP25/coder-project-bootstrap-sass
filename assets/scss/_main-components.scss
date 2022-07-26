@@ -134,16 +134,15 @@
 
 .ver-mas-link {
     text-decoration: none;
+    margin-top: 1%;
     padding: 10px;
-    .ver-mas {
-        display: block;
-        width: 100%;
-        border: 2px solid $primary-dark;
-        background-color: map-get($palette, primary-light);
-        text-align: center;
-        font-size: 1.5em;
-        font-weight: 700;
-        color:  map-get($palette, dark);
-        padding: 10px 0;
-    }
+    display: block;
+    width: 100%;
+    border: 2px solid $primary-dark;
+    background-color: map-get($palette, primary-light);
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    color:  map-get($palette, dark);
+    @extend .link-underline-animation;
 }

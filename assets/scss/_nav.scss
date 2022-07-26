@@ -12,10 +12,8 @@
         -moz-box-shadow: $nav-shadow;
         box-shadow: $nav-shadow;
         .active {
-            border-top: $border-1;
-            border-bottom: $border-2;
             font-size: 1.05rem;
-            font-weight: 700;
+            font-weight: 800;
         }
         .nav-logo {
             width: 70px;
@@ -25,9 +23,6 @@
 .nav-link {
     font-weight: 600;
     color: black;
-    transition: 200ms;  
-    &:hover, &:focus {
-        transform: scale(1.1, 1.1);
-        color: black;
-    }
+    @extend .link-underline-animation;
 }
+
