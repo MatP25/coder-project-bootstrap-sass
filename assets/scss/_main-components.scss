@@ -1,23 +1,24 @@
-
-
 /* carousel in index.html */
 .carousel-index {
-    border: none;
+    border: 2px solid $secondary-dark;
     border-radius: 0;
+    max-width: 600px;
+    background-color: map-get($palette, primary-light);
+    color: map-get($palette, $primary-dark);
     &>div {
         margin-top: 2%;
     }
-}
-
-.carousel-img-index {
-    max-height: 500px;
-    min-width: auto;
+    .carousel-img-index {
+            max-height: 500px;
+            min-width: auto;
+            border: 1px solid $secondary-dark;
+    }
 }
 
 /* cards in index.html */
 .index-card {
     border: none;
-    background-color: map-get($colors,dark);
+    background-color: map-get($palette,dark);
     position: relative;
     z-index: 90;
     will-change: transform;
@@ -36,7 +37,7 @@
         @include border-rad(5%);
     }
     p {
-        color: $white;
+        color: white;
         position: relative;
         padding: 5%;
         z-index: 60;
@@ -44,7 +45,6 @@
         font-weight: 500;
     }
 }
-
 
 /* imgs in servicios.html */
 .aside-img-container {
@@ -64,7 +64,6 @@
         overflow-x: hidden;
         img {
             @include border-rad(5px);
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
         .img-overlay {
             @include flex-properties (flex,row,nowrap,center,center);
@@ -80,7 +79,8 @@
 /* service cards */
 .serv-card {
     border: none;
-    background: map-get($background-colors, serv-card) ;
+    background: map-get($palette, primary-light);
+    color: $dark;
     img {
         margin: 10% 0;
     }
@@ -113,22 +113,23 @@
 
 /* buttons in form */
 .btn-send {
-    color: $white;
-    background: map-get($colors, dark-blue);
+    color: white;
+    background: map-get($palette, primary-dark);
     padding: 8px 20px;
     margin: 1%;
+    will-change: transform;
+    transition: 300ms;
     &:hover, &:focus{
-        color: $white;
-        background: map-get($colors, light-blue);
+        color: white;
+        background: map-get($palette, primary-light);
         border: $border-2;
         transform: scale(1.02);
-        transition: 0.2s;
     }
 }
 
 .btn-delete {
     @extend .btn-send;
-    background: map-get($colors, dark);
+    background: map-get($palette, dark);
 }
 
 .ver-mas-link {
@@ -137,11 +138,12 @@
     .ver-mas {
         display: block;
         width: 100%;
-        background-color: $serv-card-bg;
+        border: 2px solid $primary-dark;
+        background-color: map-get($palette, primary-light);
         text-align: center;
         font-size: 1.5em;
         font-weight: 700;
-        color:  $dark-blue;
+        color:  map-get($palette, dark);
         padding: 10px 0;
     }
 }

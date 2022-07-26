@@ -205,9 +205,9 @@
 }
 
 .card-transform {
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    box-shadow: $primary-dark 0px 20px 30px -10px;
     -webkit-transform: scale(1.02 , 1.02);
-    -webkit-transition: 350ms;
+    -webkit-transition: 300ms;
     transform: scale(1.02 , 1.02);
-    transition: 350ms;
+    transition: 300ms;
 }

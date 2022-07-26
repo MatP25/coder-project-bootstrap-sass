@@ -1,6 +1,6 @@
 .footer {
     border-top: $border-2;
-    background: map-get($background-colors, footer);
+    background: map-get($palette, bg-primary);
     .icons-list {
         list-style: none;
         @include flex-properties(flex,row,nowrap,space-evenly,center);
@@ -8,11 +8,11 @@
             transition: 0.1s;
                 &:hover, &:focus {
                     transform: scale(1.15, 1.15);
-                    text-shadow: 1px 1px 2px #353434;
+                    text-shadow: 1px 1px 2px $primary-dark;
                     }
             a {
                 text-decoration: none;
-                color: map-get($colors,dark);
+                color: map-get($palette,dark);
                 .bi {
                     font-size: 40px;
                 }
@@ -42,7 +42,7 @@
     width: 100%;
     overflow: hidden;
     margin-bottom: 15px;
-    border: 2px solid rgba(20,20,20,0.5);
+    border: 2px solid $primary-dark;
     padding:0;
     .map-iframe {
         width: 100%;

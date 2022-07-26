@@ -174,14 +174,14 @@
   animation-fill-mode: forwards; }
 
 .card-transform, .index-card:hover, .index-card:focus {
-  box-shadow: #26394d 0px 20px 30px -10px;
+  box-shadow: #133C55 0px 20px 30px -10px;
   -webkit-transform: scale(1.02, 1.02);
-  -webkit-transition: 350ms;
+  -webkit-transition: 300ms;
   transform: scale(1.02, 1.02);
-  transition: 350ms; }
+  transition: 300ms; }
 
 .header {
-  background-color: rgba(113, 151, 180, 0.8);
+  background-color: #386FA4;
   background-image: url(../imgs/backgrounds/header-bg-2-small.webp);
   border-bottom: 2px solid black;
   min-height: 300px;
@@ -192,7 +192,7 @@
     .header h1 a {
       text-decoration: none;
       font-family: "Signika", sans-serif;
-      color: #ebffff;
+      color: white;
       text-shadow: 2px 2px 4px black; }
 
 .nav-parent {
@@ -200,7 +200,7 @@
   top: 0;
   z-index: 100; }
   .nav-parent .navbar {
-    background-color: rgba(77, 123, 158, 0.97);
+    background-color: #84D2F6;
     width: 100%;
     border-bottom: 2px solid black;
     border-left: 1px solid black;
@@ -218,12 +218,11 @@
 
 .nav-link {
   font-weight: 600;
-  color: black; }
-
-/* carousel in trabajos.html */
-.carousel {
-  border-bottom: 2px solid black;
-  border-top: 2px solid black; }
+  color: black;
+  transition: 200ms; }
+  .nav-link:hover, .nav-link:focus {
+    transform: scale(1.1, 1.1);
+    color: black; }
 
 /* gallery container */
 .gallery-div {
@@ -245,7 +244,7 @@
       position: absolute;
       left: 0;
       width: 100%;
-      background: rgba(30, 30, 30, 0.802); }
+      background: rgba(25, 25, 25, 0.6); }
     .gallery-div li img {
       object-fit: cover;
       width: 100%;
@@ -286,19 +285,21 @@
 
 /* carousel in index.html */
 .carousel-index {
-  border: none;
-  border-radius: 0; }
+  border: 2px solid #386FA4;
+  border-radius: 0;
+  max-width: 600px;
+  background-color: #59A5D8; }
   .carousel-index > div {
     margin-top: 2%; }
-
-.carousel-img-index {
-  max-height: 500px;
-  min-width: auto; }
+  .carousel-index .carousel-img-index {
+    max-height: 500px;
+    min-width: auto;
+    border: 1px solid #386FA4; }
 
 /* cards in index.html */
 .index-card {
   border: none;
-  background-color: #212529;
+  background-color: #21201e;
   position: relative;
   z-index: 90;
   will-change: transform;
@@ -350,7 +351,7 @@
       position: absolute;
       left: 0;
       width: 100%;
-      background: rgba(30, 30, 30, 0.802); }
+      background: rgba(25, 25, 25, 0.6); }
     .aside-img-container .img-container-servicios img {
       object-fit: cover;
       width: 100%;
@@ -358,8 +359,7 @@
     .aside-img-container .img-container-servicios img {
       border-radius: 5px;
       -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+      -moz-border-radius: 5px; }
     .aside-img-container .img-container-servicios .img-overlay {
       display: flex;
       flex-direction: row;
@@ -374,7 +374,8 @@
 /* service cards */
 .serv-card {
   border: none;
-  background: #6ec0d6; }
+  background: #59A5D8;
+  color: #21201e; }
   .serv-card img {
     margin: 10% 0; }
 
@@ -394,7 +395,7 @@
     position: absolute;
     left: 0;
     width: 100%;
-    background: rgba(30, 30, 30, 0.802); }
+    background: rgba(25, 25, 25, 0.6); }
   .img-container-nosotros img {
     object-fit: cover;
     width: 100%;
@@ -423,18 +424,19 @@
 /* buttons in form */
 .btn-send, .btn-delete {
   color: white;
-  background: #070d2e;
+  background: #133C55;
   padding: 8px 20px;
-  margin: 1%; }
+  margin: 1%;
+  will-change: transform;
+  transition: 300ms; }
   .btn-send:hover, .btn-delete:hover, .btn-send:focus, .btn-delete:focus {
     color: white;
-    background: #1f457e;
+    background: #59A5D8;
     border: 2px solid black;
-    transform: scale(1.02);
-    transition: 0.2s; }
+    transform: scale(1.02); }
 
 .btn-delete {
-  background: #212529; }
+  background: #21201e; }
 
 .ver-mas-link {
   text-decoration: none;
@@ -442,25 +444,26 @@
   .ver-mas-link .ver-mas {
     display: block;
     width: 100%;
-    background-color: #6ec0d6;
+    border: 2px solid #133C55;
+    background-color: #59A5D8;
     text-align: center;
     font-size: 1.5em;
     font-weight: 700;
-    color: #070d2e;
+    color: #21201e;
     padding: 10px 0; }
 
 .reviews {
   margin: 1% 0;
   padding: 1.5%;
-  background-color: rgba(113, 151, 180, 0.8);
-  background-image: url(../imgs/backgrounds/background1-small.webp); }
+  background-image: url(../imgs/backgrounds/background1-small.webp);
+  color: #21201e; }
   .reviews .review-card {
-    background-color: #6ec0d6;
+    background-color: #84D2F6;
     padding: 1.2%;
     margin: 3%;
     max-width: 400px;
     height: fit-content;
-    box-shadow: -5px 4px 10px -5px;
+    box-shadow: -5px 4px 10px -5px #133C55;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px; }
@@ -469,7 +472,7 @@
       .reviews .review-card .review-name::before {
         content: "\2605 \2605 \2605 \2605 \2605"; }
     .reviews .review-card .review-container {
-      border: 1px solid #070d2e;
+      border: 2px solid #133C55;
       border-radius: 4px;
       -webkit-border-radius: 4px;
       -moz-border-radius: 4px;
@@ -487,7 +490,7 @@
 
 .footer {
   border-top: 2px solid black;
-  background: #6fa1c7; }
+  background: #84D2F6; }
   .footer .icons-list {
     list-style: none;
     display: flex;
@@ -499,10 +502,10 @@
       transition: 0.1s; }
       .footer .icons-list .contact-link:hover, .footer .icons-list .contact-link:focus {
         transform: scale(1.15, 1.15);
-        text-shadow: 1px 1px 2px #353434; }
+        text-shadow: 1px 1px 2px #133C55; }
       .footer .icons-list .contact-link a {
         text-decoration: none;
-        color: #212529; }
+        color: #21201e; }
         .footer .icons-list .contact-link a .bi {
           font-size: 40px; }
   .footer .contact-info-list {
@@ -523,7 +526,7 @@
   width: 100%;
   overflow: hidden;
   margin-bottom: 15px;
-  border: 2px solid rgba(20, 20, 20, 0.5);
+  border: 2px solid #133C55;
   padding: 0; }
   .map-container .map-iframe {
     width: 100%;
